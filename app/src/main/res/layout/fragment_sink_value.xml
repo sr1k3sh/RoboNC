@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/_5sdp"
+                android:text="Front Distance:" />
+
+            <EditText
+                android:id="@+id/sfront"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/a"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background"
+                android:digits="1234567890"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="phone"
+                android:maxLength="5"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sfront"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="Back Distance:" />
+
+            <EditText
+                android:id="@+id/sback"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/b"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background"
+                android:digits="1234567890"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="phone"
+                android:maxLength="5"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sback"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="Edge Distance:" />
+
+            <EditText
+                android:id="@+id/sedge"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/c"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background"
+                android:digits="1234567890"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="phone"
+                android:maxLength="5"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sedge"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="Radius of Tap:" />
+
+            <EditText
+                android:id="@+id/stap"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/d"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background"
+                android:digits="1234567890"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="phone"
+                android:maxLength="5"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stap"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="Radius Edge" />
+
+            <EditText
+                android:id="@+id/rtap"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/e"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background"
+                android:digits="1234567890"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="phone"
+                android:maxLength="5"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rtap"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="Sink Breadth:" />
+
+            <EditText
+                android:id="@+id/redge"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/f"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background"
+                android:digits="1234567890"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="phone"
+                android:maxLength="5"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/redge"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="Sink Length:" />
+
+            <EditText
+                android:id="@+id/sinklength"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/g"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/background"
+                android:digits="1234567890"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="phone"
+                android:maxLength="5"
+                android:textSize="@dimen/_10sdp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

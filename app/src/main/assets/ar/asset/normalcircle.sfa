@@ -1,0 +1,101 @@
+{
+  materials: [
+    {
+      name: 'Material.001',
+      parameters: [
+        {
+          baseColor: 'a',
+        },
+        {
+          baseColorTint: [
+            0.64000000000000001,
+            0.64000000000000001,
+            0.64000000000000001,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.14280000000000001,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'Mesa_A_o',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0.26980399999999999,
+            0.28235300000000002,
+            0.28235300000000002,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.14280000000000001,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'Mesa_Car',
+      parameters: [
+        {
+          baseColor: 'a',
+        },
+        {
+          baseColorTint: [
+            0.68705899999999998,
+            0.59294100000000005,
+            0.48313699999999998,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.14280000000000001,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'src/main/assets/ar/asset/normalcircle.obj',
+    name: 'normalcircle',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'src/main/assets/ar/asset\\a.jpg',
+      name: 'a',
+      pipeline_name: 'a.jpg',
+    },
+  ],
+  version: '0.52:1',
+}

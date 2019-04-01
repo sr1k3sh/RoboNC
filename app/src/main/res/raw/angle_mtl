@@ -1,0 +1,13 @@
+# Blender MTL File: 'None'
+# Material Count: 3
+
+newmtl Foregrou
+illum 2
+
+newmtl FrontCol
+illum 2
+map_Kd a.jpg
+
+newmtl None
+illum 2
+map_Kd a.jpg

@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>Hello, WebVR! - A-Frame</title>
+
+
+    <script src="js/aframe/aframe.min.js"></script>
+    <script src="js/aframe/aframe-ar.js"></script>
+    <script src="js/aframe/aframe-orbit-controls-component.min.js"></script>
+
+
+    <!--   for draggable component -->
+
+
+</head>
+
+
+<body onload="ar()">
+
+
+<script>
+           
+ /*   AFRAME.registerComponent('xyz', {
+
+   init: function () {
+   alert("dkjks");
+     }*/
+
+
+     AFRAME.registerComponent('xyz',{
+      schema : { speed : {default:1}},
+      init : function(){
+
+
+
+        var isDragging=false;
+
+        this.ifMouseDown = false;
+        this.x_cord = 0;
+        this.y_cord = 0;
+        document.addEventListener('mousedown',this.OnDocumentMouseDown.bind(this));
+        document.addEventListener('mouseup',this.OnDocumentMouseUp.bind(this));
+        document.addEventListener('mousemove',this.OnDocumentMouseMove.bind(this));
+
+      },
+      OnDocumentMouseDown : function(event){
+        this.ifMouseDown = true;
+        this.x_cord = event.clientX;
+        this.y_cord = event.clientY;
+      },
+      OnDocumentMouseUp : function(){
+        this.ifMouseDown = false;
+      },
+      OnDocumentMouseMove : function(event)
+      {
+        if(this.ifMouseDown)
+        {
+          var temp_x = event.clientX-this.x_cord;
+          var temp_y = event.clientY-this.y_cord;
+          if(Math.abs(temp_y)<Math.abs(temp_x))
+          {
+            this.el.object3D.rotateY(temp_x*this.data.speed/1000);
+          }
+          else
+          {
+            this.el.object3D.rotateX(temp_y*this.data.speed/1000);
+          }
+          this.x_cord = event.clientX;
+          this.y_cord = event.clientY;
+        }
+      }
+
+
+    });
+
+
+</script>
+
+
+<a-scene embedded antialias="true">
+
+    <!--<a-entity id="furniture"  obj-model="obj: #tree-obj; mtl: #test-mtl" scale="0.3 0.3 0.3" rotation="0 45 0"></a-entity>-->
+
+
+    <a-obj-model id="furniture" src="asset/" mtl="url(asset/)" scale="5 5 5"
+                 rotation="0 -90 0"></a-obj-model>
+    <a-assets>
+        <img id="my-texture" src="asset/granite/black_pearl.jpg">
+    </a-assets>
+    <a-entity camera="fov:80;" position="-8 10 0"
+              orbit-controls="target:#furniture; autoRotate: false"
+              geometry="primitive:box" material="src: #mytexture" xyz>
+    </a-entity>
+</a-scene>
+
+
+
+<script type="text/javascript">
+    function setm(x) {
+
+        if(x=="R"){
+        <!--alert(x)-->
+     document.getElementsByTagName("a-obj-model")[0].setAttribute("src", "asset/normal.obj");
+
+      <!--document.getElementsByTagName("a-obj-model")[0].setAttribute("mtl", "url("+y+")");-->
+      document.getElementsByTagName("a-obj-model")[0].setAttribute("scale" ,"1 1 1");
+      }
+      else if (x== "C"){
+      document.getElementsByTagName("a-obj-model")[0].setAttribute("src", "asset/normalcircle.obj");
+      document.getElementsByTagName("a-obj-model")[0].setAttribute("scale" ,"1 1 1");
+      }
+      else{
+      document.getElementsByTagName("a-obj-model")[0].setAttribute("src", "asset/normaloval.obj");
+      document.getElementsByTagName("a-obj-model")[0].setAttribute("scale" ,"1 1 1");
+
+      }
+
+    }
+
+    function setMaterial(x) {
+
+        document.getElementsByTagName("a-obj-model")[0].setAttribute("mtl", "url("+x+")");
+    }
+
+</script>
+
+</body>
+
+</html>

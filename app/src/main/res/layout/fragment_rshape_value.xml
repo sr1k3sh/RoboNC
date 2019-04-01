@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:text="Length:"/>
+    <EditText
+        android:id="@+id/rlength"
+        android:layout_centerHorizontal="true"
+        android:maxLength="5"
+        android:imeOptions="flagNoExtractUi"
+        android:background="@drawable/background"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_below="@+id/a"
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textSize="@dimen/_10sdp" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/rlength"
+        android:paddingTop="10dp"
+        android:text="Breadth:"/>
+    <EditText
+        android:id="@+id/rbreadth"
+        android:layout_centerHorizontal="true"
+        android:maxLength="5"
+        android:imeOptions="flagNoExtractUi"
+        android:background="@drawable/background"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_below="@+id/b"
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textSize="@dimen/_10sdp" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/rbreadth"
+        android:paddingTop="10dp"
+        android:text="Thickness:"/>
+    <EditText
+        android:id="@+id/rthickness"
+        android:layout_centerHorizontal="true"
+        android:maxLength="5"
+        android:imeOptions="flagNoExtractUi"
+        android:background="@drawable/background"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_below="@+id/c"
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textSize="@dimen/_10sdp" />
+
+</RelativeLayout>

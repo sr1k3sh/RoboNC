@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item
+                android:id="@+id/l"
+                android:icon="@drawable/linel"
+                android:title="linel" />
+            <item
+                android:id="@+id/s"
+                android:icon="@drawable/lines"
+                android:title="lines" />
+            <item
+                android:id="@+id/x"
+                android:icon="@drawable/linex"
+                android:title="linex" />
+            <item
+                android:id="@+id/y"
+                android:icon="@drawable/liney"
+                android:title="liney" />
+
+</menu>

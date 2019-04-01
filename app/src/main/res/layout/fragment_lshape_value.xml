@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:text="Length1:"/>
+    <EditText
+        android:id="@+id/llength1"
+
+        android:maxLength="5"
+        android:imeOptions="flagNoExtractUi"
+        android:background="@drawable/background"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_20sdp"
+
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textSize="@dimen/_10sdp" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+
+        android:gravity="center_horizontal"
+
+        android:paddingTop="10dp"
+        android:text="Breadth1:"/>
+    <EditText
+        android:id="@+id/lbreadth1"
+
+        android:maxLength="5"
+        android:imeOptions="flagNoExtractUi"
+        android:background="@drawable/background"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_20sdp"
+
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textSize="@dimen/_10sdp" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+
+        android:gravity="center_horizontal"
+
+        android:paddingTop="10dp"
+        android:text="length2:"/>
+    <EditText
+        android:id="@+id/llength2"
+
+        android:maxLength="5"
+        android:imeOptions="flagNoExtractUi"
+        android:background="@drawable/background"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_20sdp"
+
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+
+        android:gravity="center_horizontal"
+
+        android:paddingTop="10dp"
+        android:text="breadth2:"/>
+    <EditText
+        android:id="@+id/lbreadth2"
+
+        android:maxLength="5"
+        android:imeOptions="flagNoExtractUi"
+        android:background="@drawable/background"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_20sdp"
+
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textSize="@dimen/_10sdp" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+
+        android:gravity="center_horizontal"
+
+        android:paddingTop="10dp"
+        android:text="thickness:"/>
+    <EditText
+        android:id="@+id/lthickness"
+
+        android:maxLength="5"
+        android:imeOptions="flagNoExtractUi"
+        android:background="@drawable/background"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_20sdp"
+
+        android:inputType="phone"
+        android:digits="1234567890"
+        android:textSize="@dimen/_10sdp" />
+
+</LinearLayout>

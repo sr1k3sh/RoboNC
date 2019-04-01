@@ -1,0 +1,169 @@
+ {
+    "Materials": [
+        {
+            "material_type": "ash",
+            "image_path": "ash-wood.jpg"
+        },
+        {
+            "material_type": "beech",
+            "image_path": "beech-wood.jpg"
+        },
+        {
+            "material_type": "cherry",
+            "image_path": "cherry-wood.jpg"
+        },
+        {
+            "material_type": "walnut",
+            "image_path": "walnut-wood.jpg"
+        }
+    ],
+    "ash": [
+        {
+            "id": 1,
+            "material_type": "ash",
+            "material_name": "ash-cinder",
+            "price": 1234,
+            "stock": 12,
+            "image_path": "ash.jpg",
+            "created_at": null,
+            "updated_at": null
+        },
+        {
+            "id": 2,
+            "material_type": "ash",
+            "material_name": "ash-crown",
+            "price": 1234,
+            "stock": 11,
+            "image_path": "ash\/ash-crown.jpg",
+            "created_at": null,
+            "updated_at": null
+        },
+        {
+            "id": 3,
+            "material_type": "ash",
+            "material_name": "ash-feelwood",
+            "price": 1234,
+            "stock": 11,
+            "image_path": "ash\/ash-feelwood.jpg",
+            "created_at": null,
+            "updated_at": null
+        }
+    ],
+    "beech": [
+        {
+            "id": 4,
+            "material_type": "beech",
+            "material_name": "beech-cut",
+            "price": 1234,
+            "stock": 11,
+            "image_path": "beech\/beech-cut.jpg",
+            "created_at": null,
+            "updated_at": null
+        },
+        {
+            "id": 5,
+            "material_type": "beech",
+            "material_name": "beech-rustic",
+            "price": 1234,
+            "stock": 11,
+            "image_path": "beech\/beech-rustic.jpg",
+            "created_at": null,
+            "updated_at": null
+        },
+        {
+            "id": 6,
+            "material_type": "beech",
+            "material_name": "beech-steamed",
+            "price": 1234,
+            "stock": 11,
+            "image_path": "beech\/beech-steamed.jpg",
+            "created_at": null,
+            "updated_at": null
+        },
+        {
+            "id": 7,
+            "material_type": "beech",
+            "material_name": "beech-white",
+            "price": 1234,
+            "stock": 11,
+            "image_path": "beech\/beech-white.jpg",
+            "created_at": null,
+            "updated_at": null
+        }
+    ],
+    "cherry": [
+        {
+            "id": 10,
+            "material_type": "cherry",
+            "material_name": "cherry-crown-cut",
+            "price": 1234,
+            "stock": 11,
+            "image_path": "cherry\/cherry-crown.jpg",
+            "created_at": null,
+            "updated_at": null
+        },
+        {
+            "id": 11,
+            "material_type": "cherry",
+            "material_name": "cherry-north",
+            "price": 1234,
+            "stock": 43,
+            "image_path": "cherry\/cherry-north.jpg",
+            "created_at": null,
+            "updated_at": null
+        },
+        {
+            "id": 12,
+            "material_type": "cherry",
+            "material_name": "cherry-quarter",
+            "price": 500,
+            "stock": 21,
+            "image_path": "cherry\/cherry-quarter.jpg",
+            "created_at": null,
+            "updated_at": null
+        }
+    ],
+    "walnut": [
+        {
+            "id": 7,
+            "material_type": "walnut",
+            "material_name": "teak-crown",
+            "price": 1234,
+            "stock": 11,
+            "image_path": "walnut\/teak-crown.jpg",
+            "created_at": null,
+            "updated_at": null
+        },
+        {
+            "id": 8,
+            "material_type": "walnut",
+            "material_name": "walnut-cut",
+            "price": 1234,
+            "stock": 33,
+            "image_path": "Onyx\/walnut-cut.jpg",
+            "created_at": null,
+            "updated_at": null
+        },
+        {
+            "id": 9,
+            "material_type": "walnut",
+            "material_name": "walnut-quarter",
+            "price": 1234,
+            "stock": 31,
+            "image_path": "walnut\/walnut-quarter.jpg",
+            "created_at": null,
+            "updated_at": null
+        }
+    ,
+        {
+            "id": 10,
+            "material_type": "walnut",
+            "material_name": "walnut-teak",
+            "price": 1234,
+            "stock": 31,
+            "image_path": "walnut\/walnut-teak.jpg",
+            "created_at": null,
+            "updated_at": null
+        }
+    ]
+ }
